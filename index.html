@@ -4,12 +4,19 @@
         <title>
             My first site
         </title>
+        <meta
+        name="viewport"
+        content="width=device-width,
+        height=device-height
+        initial-scale=1
+        "/>
         <link rel="stylesheet" href="index.css">
         <script>
             function myfunction(){
-                const divToDelete = <!--document. -->
-
-            }
+                const divToDelete = document.getElementById("div1");
+                divToDelete.remove();
+                console.log("We did it!");
+             }
         </script>
     </head>
     <body>
@@ -36,6 +43,7 @@
                     </p>
                 </li>
             </ol>
+            <img src="RF0010-04 Small Seal-RGB-Gray.png" alt="rpi_logo" height="100" width="100">
             <a href="https://github.com/shanhe2/hackrpi23">
                 hackrpi23 github webpage
             </a>
@@ -43,5 +51,9 @@
         <button onclick="myfunction()">
             My first button!
         </button>
+        <div id="div1">
+            <h1>Hello...again?</h1>
+            <p>I'm in a different div!</p>
+        </div>
     </body>
 </html>
